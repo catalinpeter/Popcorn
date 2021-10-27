@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Popcorn</string>
+    <string name="find_the_movie_placeholder">Find the movie</string>
+    <string name="trending_movies_label">Trending movies</string>
+    <string name="view_all_btn"><![CDATA[view all >]]></string>
+    <string name="this_label">THIS</string>
+    <string name="rate_label">RATE</string>
+    <string name="see_full_cast_and_crew"><![CDATA[See full cast and crew >]]></string>
+    <string name="stars_label">Stars:</string>
+    <string name="writer_label">Writer:</string>
+    <string name="director_label">Director:</string>
+    <string name="alert">Alert</string>
+    <string name="empty_search">Please enter the text to proceed</string>
+    <string name="empty_api_call_response">There are no results that match your search</string>
+    <string name="trending">trending</string>
+    <string name="lastTenMoviesKey">lastTenMovies</string>
+    <string name="choose">Choose a movie</string>
+    <string name="hint">Find the movie</string>
+
+
+
+
+</resources>

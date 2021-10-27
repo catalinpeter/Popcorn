@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_12sdp"
+    app:cardBackgroundColor="@color/cardview_light_background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp">
+
+        <ImageView
+            android:id="@+id/image_card_view_mlcv"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/solo" />
+
+        <TextView
+            android:id="@+id/title_mlc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:fontFamily="sans-serif-light"
+            android:lines="1"
+            android:text="Titanic "
+            android:textColor="#494A4B"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/image_card_view_mlcv"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.45" />
+
+        <TextView
+            android:id="@+id/year_mlc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="1953"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintStart_toStartOf="@+id/title_mlc"
+            app:layout_constraintTop_toBottomOf="@+id/title_mlc" />
+
+        <TextView
+            android:id="@+id/short_description_mlc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:fontFamily="sans-serif-light"
+            android:lines="2"
+            android:text="PG-13 | 3h 14 min | Drama romance | 19 December 1997 (SUA)SDV VFYDGVF UVFD VF VFVF"
+            android:textColor="#494A4B"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="@+id/title_mlc"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/title_mlc"
+            app:layout_constraintTop_toBottomOf="@+id/year_mlc" />
+
+        <ImageView
+            android:id="@+id/star_mlc"
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/rating_lower_mlc"
+            app:layout_constraintEnd_toStartOf="@+id/rating_upper_mlc"
+            app:layout_constraintTop_toTopOf="@+id/rating_upper_mlc"
+            app:srcCompat="@drawable/ic_yellow_star" />
+
+        <TextView
+            android:id="@+id/rating_upper_mlc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:fontFamily="sans-serif-light"
+            android:text="7.9/10"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintBottom_toTopOf="@+id/rating_lower_mlc"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_divider_mlc"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/rating_lower_mlc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:lines="1"
+            android:text="889,234"
+            android:textSize="@dimen/_6ssp"
+            app:layout_constraintBottom_toTopOf="@+id/title_mlc"
+            app:layout_constraintEnd_toEndOf="@+id/rating_upper_mlc"
+            app:layout_constraintStart_toStartOf="@+id/rating_upper_mlc"
+            app:layout_constraintTop_toBottomOf="@+id/rating_upper_mlc" />
+
+        <View
+            android:id="@+id/vertical_divider_mlc"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/_22sdp"
+
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="@+id/empty_star_mlc"
+            app:layout_constraintEnd_toStartOf="@+id/empty_star_mlc"
+            app:layout_constraintTop_toTopOf="@+id/empty_star_mlc" />
+
+        <ImageView
+            android:id="@+id/empty_star_mlc"
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/this_label"
+            app:layout_constraintEnd_toStartOf="@+id/role_label_mlc"
+            app:layout_constraintTop_toTopOf="@+id/role_label_mlc"
+            app:srcCompat="@drawable/ic_empty_star" />
+
+        <TextView
+            android:id="@+id/role_label_mlc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/rate_label"
+            android:textSize="@dimen/_9ssp"
+            app:layout_constraintBottom_toTopOf="@+id/this_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/this_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:lines="1"
+            android:text="@string/this_label"
+            android:textSize="@dimen/_9ssp"
+            app:layout_constraintBottom_toTopOf="@+id/title_mlc"
+            app:layout_constraintEnd_toEndOf="@+id/role_label_mlc"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/role_label_mlc"
+            app:layout_constraintTop_toBottomOf="@+id/role_label_mlc" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation_graph"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/moviesFragment"
+        android:name="com.catap.popcorn.ui.movies.MoviesFragment"
+        android:label="MoviesFragment" >
+        <action
+            android:id="@+id/action_moviesFragment_to_detailesFragment"
+            app:destination="@id/detailesFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_moviesFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <argument
+            android:name="search_input_main"
+            app:argType="com.catap.popcorn.data.SearchType" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailesFragment"
+        android:name="com.catap.popcorn.ui.detailes.DetailesFragment"
+        android:label="DetailesFragment" >
+        <argument
+            android:name="movie"
+            app:argType="com.catap.popcorn.data.TmdbMovie" />
+        <action
+            android:id="@+id/action_detailesFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.catap.popcorn.ui.main.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_moviesFragment"
+            app:destination="@id/moviesFragment" />
+    </fragment>
+</navigation>
