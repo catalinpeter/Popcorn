@@ -1,10 +1,11 @@
 
-![screen1](screens/screen1.jpg)
-![screen1](screens/screen2.jpg)
-![screen1](screens/screen3.jpg)
+## Overview ##
+The app is write in Kotlin using MVVM architecture pattern and Android Jetpack together with other third party libraries .
 
 ## Overview ##
-The app is write in Kotlin using MVVM architecture pattern and Android Jetpack together with other third party libraries in order to achive the final result.
+You have to add yor "themoviedb" API key in property API_KEY from TmdbApi interface.
+"https://developers.themoviedb.org/3/getting-started/introduction"
+
 
 ## App description ##
 App allows the user to search for movies using "themoviedatabase" API.
@@ -50,6 +51,6 @@ https://github.com/intuit/sdp.git
 I use this library to be able to save objects in SharedPreferences for sugestionList persistence
 https://github.com/GuilhE/SharedPrefs-ktx/tree/master/converter-gson
 
-### Things to do next ###
+### Things to do ###
 Save API key in a secure manner.
 Handling network and other events.
