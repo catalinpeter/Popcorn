@@ -2,7 +2,8 @@
 ## Overview ##
 The app is write in Kotlin using MVVM architecture pattern and Android Jetpack together with other third party libraries .
 
-## Use ##
+## Clone & Use ##
+https://github.com/catalinpeter/Popcorn.git
 You have to add yor "themoviedb" API key in property API_KEY from TmdbApi interface.
 "https://developers.themoviedb.org/3/getting-started/introduction"
 
