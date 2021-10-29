@@ -2,10 +2,9 @@
 ## Overview ##
 The app is write in Kotlin using MVVM architecture pattern and Android Jetpack together with other third party libraries .
 
-## Overview ##
+## Use ##
 You have to add yor "themoviedb" API key in property API_KEY from TmdbApi interface.
 "https://developers.themoviedb.org/3/getting-started/introduction"
-
 
 ## App description ##
 App allows the user to search for movies using "themoviedatabase" API.
