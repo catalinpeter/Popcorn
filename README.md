@@ -1,3 +1,6 @@
+![screen1](screens/screen1.jpg)
+![screen1](screens/screen2.jpg)
+![screen1](screens/screen3.jpg)
 
 ## Overview ##
 The app is write in Kotlin using MVVM architecture pattern and Android Jetpack together with other third party libraries .
@@ -54,3 +57,7 @@ https://github.com/GuilhE/SharedPrefs-ktx/tree/master/converter-gson
 ### Things to do ###
 Save API key in a secure manner.
 Handling network and other events.
+
+
+
+
