@@ -32,7 +32,7 @@ when the user touches a movie from the list displayed in the Movies Screen, the 
 
 ### Components and libraries ###
 * Navigation Component
-Used for in app navigation and data parsing between component (Fragments)
+Used for in app navigation and data parsing between components (Fragments)
 * ViewModel & LiveData
 ViewModel class manage data for Fragments and for configurtion change persistance.
 LiveData is use observable data holder class for Paging library stream
